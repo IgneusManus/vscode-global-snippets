@@ -1,12 +1,20 @@
 {
 	// Global Markdown Snippet(s) for VS Code
 
-	"Current Date": {
-		"prefix": "date",
+	"Current Date Backlink": {
+		"prefix": "datelink",
 		"scope": "markdown",
         "body": [
             "## [[$CURRENT_MONTH-$CURRENT_DATE-$CURRENT_YEAR-${CURRENT_DAY_NAME/(.*)/${1:/downcase}/}]]\r\n\r\n"
         ],
         "description": "Adds a new markdown header as a [wiki-link] style backlink for the current day"
+    },
+    "Current Date Tag": {
+		"prefix": "datetag",
+		"scope": "markdown",
+        "body": [
+            "#$CURRENT_MONTH-$CURRENT_DATE-$CURRENT_YEAR-$CURRENT_DAY_NAME\r\n"
+        ],
+        "description": "Adds a new #tag for the current day"
     }
 }
