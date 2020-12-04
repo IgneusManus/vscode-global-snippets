@@ -16,5 +16,13 @@
             "#$CURRENT_MONTH-$CURRENT_DATE-$CURRENT_YEAR-$CURRENT_DAY_NAME\r\n"
         ],
         "description": "Adds a new #tag for the current day"
+    },
+    "Todo": {
+		"prefix": "todolist",
+		"scope": "markdown",
+        "body": [
+            "#To-Do\r\n- [] ${1:task}"
+        ],
+        "description": "Adds a new #tag for the current day"
     }
 }
